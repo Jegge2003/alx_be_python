@@ -11,24 +11,24 @@ def main():
     #Loop
     while True:
         display_menu()
-        choice = input('Enter your choice: ')
+        choice = int(input('Enter your choice: '))
 
-        if choice == '1': #Adding to list
+        if choice == 1: #Adding to list
             add = input('Type the item you want to add: ')
             shopping_list.append(add)
 
-        elif choice == '2': #Removing unwanted item
+        elif choice == 2: #Removing unwanted item
             remove = input('Type the item you want to remove: ')
             if remove in shopping_list:
                 shopping_list.remove(remove)
             else:
                 print('Item not found')
 
-        elif choice == '3': #Displaying each item of the shopping list
+        elif choice == 3: #Displaying each item of the shopping list
             for i in shopping_list:
                 print(i)
 
-        elif choice == '4': #To exit the loop by displaying goodbye
+        elif choice == 4: #To exit the loop by displaying goodbye
             print('Goodbye!')
             break
 
