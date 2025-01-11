@@ -1,4 +1,4 @@
-def display_shop_menu():
+def display_menu():
     print('Shopping List Manager')
     print('1. Add Item')
     print('2. Remove Item')
@@ -10,7 +10,7 @@ def main():
 
     #Loop
     while True:
-        display_shop_menu()
+        display_menu()
         choice = input('Enter your choice: ')
 
         if choice == '1': #Adding to list
