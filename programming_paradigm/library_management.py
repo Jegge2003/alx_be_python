@@ -25,7 +25,7 @@ class Library:
 
     def __init__(self):
         #Initialize a Library instance with an empty collection of books
-        self.books = [] #Private list to store Book instances
+        self._books = [] #Private list to store Book instances
 
     def add_book(self, book):
         #Add a book to the library's collection.
