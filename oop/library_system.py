@@ -4,6 +4,9 @@ class Book:
         self.title = title
         self.author = author
 
+    def __str__(self):
+        return f'Book: {self.title} by {self.author}'
+
 class EBook(Book):
     #Initilizing class attributes
     def __init__(self, title:str, author:str, file_size:int):
@@ -12,6 +15,9 @@ class EBook(Book):
         #Adding additional attributes
         self.file_size = file_size
 
+    def __str__(self):
+        return f'EBook: {self.title} by {self.author}, File Size: {self.file_size}KB'
+
 class PrintBook(Book):
     #Initializing class attributes
     def __init__(self, title:str, author:str, page_count:int):
@@ -19,6 +25,9 @@ class PrintBook(Book):
         super.__init__(title:str, author:str)
         #Adding additional attributes
         self.page_count = page_count
+
+    def __str__(self):
+        return f'PrintBook: {self.title} by {self.author}, Page Count: {self.page_count}'
 
 class Library:
     #Initializing class attributes
