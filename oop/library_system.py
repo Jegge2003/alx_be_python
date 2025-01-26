@@ -11,7 +11,7 @@ class EBook(Book):
     #Initilizing class attributes
     def __init__(self, title:str, author:str, file_size:int):
         #Calling parent class's __init__ to initiliaze parent attributes
-        super().__init__(title:str, author:str)
+        super().__init__(title, author)
         #Adding additional attributes
         self.file_size = file_size
 
@@ -22,7 +22,7 @@ class PrintBook(Book):
     #Initializing class attributes
     def __init__(self, title:str, author:str, page_count:int):
         #Calling parent class's __init__ to initialize parent attributes
-        super().__init__(title:str, author:str)
+        super().__init__(title, author)
         #Adding additional attributes
         self.page_count = page_count
 
