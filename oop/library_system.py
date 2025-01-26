@@ -22,7 +22,7 @@ class PrintBook(Book):
     #Initializing class attributes
     def __init__(self, title:str, author:str, page_count:int):
         #Calling parent class's __init__ to initialize parent attributes
-        super.__init__(title:str, author:str)
+        super().__init__(title:str, author:str)
         #Adding additional attributes
         self.page_count = page_count
 
