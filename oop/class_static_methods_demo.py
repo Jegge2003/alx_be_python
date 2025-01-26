@@ -4,8 +4,8 @@ class Calculator:
     
     #A static method returning the sum of two number a and b
     @staticmethod
-    def add (a, b):
-        return a + b
+    def add(a, b):
+        return a+b
     
     #A class method returning the product of two numbers a and b
     @classmethod
